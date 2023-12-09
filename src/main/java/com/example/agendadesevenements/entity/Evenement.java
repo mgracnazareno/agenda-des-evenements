@@ -10,7 +10,7 @@ public class Evenement {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="idEvenement")
+    @Column(name="id_Evenement")
     private Long idEvenement;
 
     @Column(name="titre")
@@ -32,19 +32,19 @@ public class Evenement {
     private String photoEvent;
 
     @ManyToOne
-    @JoinColumn(name="idUtilisateur")
+    @JoinColumn(name="id_Utilisateur")
     private Utilisateur utilisateur;
 
     @ManyToOne
-    @JoinColumn(name="idEntreprise")
+    @JoinColumn(name="id_Entreprise")
     private Entreprise entreprise;
 
     @ManyToOne
-    @JoinColumn(name="idLocation")
+    @JoinColumn(name="id_Location")
     private Location address;
 
     @ManyToOne
-    @JoinColumn(name="idCategorie")
+    @JoinColumn(name="id_Categorie")
     private Categorie categorie;
 
 

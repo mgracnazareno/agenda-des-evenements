@@ -20,11 +20,11 @@ public class Rapport {
     private Date dateRapport;
 
     @ManyToOne
-    @JoinColumn(name = "idUtilisateur")
+    @JoinColumn(name = "id_Utilisateur")
     private Utilisateur utilisateur; //the use associated with this report
 
     @ManyToOne
-    @JoinColumn(name="idAdmin")
+    @JoinColumn(name="id_Admin")
     private Administrateur administrateur; //the admin managing the report
 
 

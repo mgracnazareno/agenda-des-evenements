@@ -5,7 +5,7 @@
     <title>Title</title>
     <!-- Add these lines to your HTML document -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" th:href="@{./css/homepage.css}" type="text/css">
+    <link rel="stylesheet" th:href="@{/css/homepage.css}" type="text/css">
 </head>
 <body>
 <!--Navbar-->
@@ -21,7 +21,7 @@
 
 <!--Banner-->
 <header class="container ">
-    <div class="banner d-flex p-5"  >
+    <div class="banner d-flex p-5 h-100"  >
         <div class="banner-slogan">
             <h1>Energizing Experiences, Empowering Connections: Activities, Conferences and Events!</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor veritatis blanditiis ratione molestiae voluptates reiciendis atque. Consequatur ipsa nesciunt vitae?</p>
@@ -41,14 +41,9 @@
         <div class="card-category">
             <i class="fa-solid fa-music"></i>
         </div>
-        <div class="card-category">
-
-        </div>
-        <div class="card-category">
-
-        </div>
+        <div class="card-category"></div>
+        <div class="card-category"></div>
     </div>
-
 </div>
 
 <!--Events Cards-->
@@ -116,17 +111,16 @@
             <button class="register-button">Register</button>
         </div>
     </div>
+</div>
 
-</div>
-</div>
 
 <!-- footer -->
 <footer>
     <p>© Event Management 2023</p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/757e4485a2.js" crossorigin="anonymous"></script>
 </body>
 </html>

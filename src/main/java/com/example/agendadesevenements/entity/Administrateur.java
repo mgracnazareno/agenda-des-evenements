@@ -1,10 +1,12 @@
 package com.example.agendadesevenements.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.util.List;
 
 @Entity
+@Data
 @Table(name="administrateur")
 public class Administrateur {
     @Id
@@ -12,11 +14,11 @@ public class Administrateur {
     private Long idAdmin;
 
     @ManyToOne
-    @JoinColumn(name="idUtilisateur")
+    @JoinColumn(name="id_Utilisateur")
     private Utilisateur utilisateur;
 
     @ManyToOne
-    @JoinColumn(name="evenement")
+    @JoinColumn(name="id_evenement")
     private Evenement evenement;
 
     @OneToMany(mappedBy = "administrateur", cascade = CascadeType.ALL, orphanRemoval = true)

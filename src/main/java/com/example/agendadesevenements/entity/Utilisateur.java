@@ -1,8 +1,10 @@
 package com.example.agendadesevenements.entity;
 
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name="utilisateur")
@@ -10,7 +12,7 @@ public class Utilisateur {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name ="idUtilisateur" )
+    @Column(name ="id_Utilisateur" )
     private Long Id;
 
     @Column(name = "nom")
@@ -25,18 +27,24 @@ public class Utilisateur {
     @Column(name="motPasse")
     private String motPasse;
 
+    @Getter
     @Column(name="photo")
     private String photo;
 
-    @OneToMany(mappedBy = "utilisateur", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Rappel> rappel;
+    private String type;
+
+    @OneToMany(mappedBy = "utilisateur")
+    private Set<Rappel> rappel;  //each utilisateur can have multiple reminders
 
     @ManyToMany
     @JoinTable(
             name = "ami",
-            joinColumns = @JoinColumn(name = "idUtilisateur"),
+            joinColumns = @JoinColumn(name = "id_Utilisateur"),
             inverseJoinColumns = @JoinColumn(name = "idAmi")
     )
     private List<Utilisateur> amis;  // List of friends
 
+
 }
+
+

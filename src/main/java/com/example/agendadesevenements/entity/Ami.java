@@ -14,12 +14,9 @@ public class Ami {
     private String status;
 
     @ManyToOne
-    @JoinColumn(name="idUtilisateur")
+    @JoinColumn(name="id_Utilisateur")
     private Utilisateur utilisateur1;
 
-    @ManyToOne
-    @JoinColumn(name="idUtilisateur")
-    private Utilisateur utilisateur2;
 
 
 }

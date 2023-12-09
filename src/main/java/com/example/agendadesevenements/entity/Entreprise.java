@@ -8,7 +8,7 @@ public class Entreprise {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "idEntreprise")
+    @Column(name = "id_Entreprise")
     private Long idEntreprise;
 
     @Column(name="nomEntreprise")
@@ -18,12 +18,11 @@ public class Entreprise {
     private String description;
 
     @ManyToOne
-    @JoinColumn(name="idUtilisateur" )
+    @JoinColumn(name="id_Utilisateur" )
     private Utilisateur idUtilisateur;
 
     @ManyToOne
-    @JoinColumn(name="idLocation")
+    @JoinColumn(name="id_Location")
     private Location idLocation;
-
 
 }

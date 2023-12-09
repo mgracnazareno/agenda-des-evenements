@@ -16,8 +16,13 @@ public class Rappel {
     private String message;
 
     @ManyToOne
-    @JoinColumn(name="idEvenement")
+    @JoinColumn(name="id_Evenement")
     private Evenement evenement;
+
+    @ManyToOne
+    @JoinColumn(name = "id_Utilisateur")
+    private Utilisateur utilisateur;
+
 
 
 }

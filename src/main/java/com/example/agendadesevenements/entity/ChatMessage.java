@@ -18,7 +18,7 @@ public class ChatMessage {
     private Date dateMessage;
 
     @ManyToOne
-    @JoinColumn(name="idUtilisateur")
+    @JoinColumn(name="id_Utilisateur")
     private Utilisateur utilisateur;
 
 
