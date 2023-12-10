@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 public class Rappel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idRappel;
+    private Integer idRappel;
 
     @Column(name="duree")
     private Integer duree;
@@ -16,11 +16,11 @@ public class Rappel {
     private String message;
 
     @ManyToOne
-    @JoinColumn(name="id_Evenement")
+    @JoinColumn(name="idEvenement")
     private Evenement evenement;
 
     @ManyToOne
-    @JoinColumn(name = "id_Utilisateur")
+    @JoinColumn(name = "idUtilisateur")
     private Utilisateur utilisateur;
 
 

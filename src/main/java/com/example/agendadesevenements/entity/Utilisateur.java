@@ -12,8 +12,8 @@ public class Utilisateur {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name ="id_Utilisateur" )
-    private Long Id;
+    @Column(name ="idUtilisateur" )
+    private Integer Id;
 
     @Column(name = "nom")
     private String nom;
@@ -33,13 +33,13 @@ public class Utilisateur {
 
     private String type;
 
-    @OneToMany(mappedBy = "utilisateur")
+    @OneToMany(mappedBy ="utilisateur")
     private Set<Rappel> rappel;  //each utilisateur can have multiple reminders
 
     @ManyToMany
     @JoinTable(
             name = "ami",
-            joinColumns = @JoinColumn(name = "id_Utilisateur"),
+            joinColumns = @JoinColumn(name = "idUtilisateur"),
             inverseJoinColumns = @JoinColumn(name = "idAmi")
     )
     private List<Utilisateur> amis;  // List of friends

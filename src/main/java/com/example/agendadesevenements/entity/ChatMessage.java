@@ -9,7 +9,7 @@ import java.util.Date;
 public class ChatMessage {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idChat;
+    private Integer idChat;
 
     @Column(name="message", length = 255)
     private String message;
@@ -18,7 +18,7 @@ public class ChatMessage {
     private Date dateMessage;
 
     @ManyToOne
-    @JoinColumn(name="id_Utilisateur")
+    @JoinColumn(name="idUtilisateur")
     private Utilisateur utilisateur;
 
 

@@ -7,18 +7,18 @@ import java.util.List;
 
 @Entity
 @Data
-@Table(name="administrateur")
+@Table(name = "administrateur")
 public class Administrateur {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idAdmin;
+    private Integer idAdmin; // This should correspond to 'idAdmin' AUTO_INCREMENT PRIMARY KEY in your DB
 
     @ManyToOne
-    @JoinColumn(name="id_Utilisateur")
+    @JoinColumn(name = "idUtilisateur") // Ensure this matches the foreign key column in your DB
     private Utilisateur utilisateur;
 
     @ManyToOne
-    @JoinColumn(name="id_evenement")
+    @JoinColumn(name = "idEvenement") // Ensure this matches the foreign key column in your DB
     private Evenement evenement;
 
     @OneToMany(mappedBy = "administrateur", cascade = CascadeType.ALL, orphanRemoval = true)

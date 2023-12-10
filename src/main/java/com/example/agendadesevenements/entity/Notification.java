@@ -8,14 +8,14 @@ public class Notification {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idNotification;
+    private Integer idNotification;
 
     @ManyToOne
-    @JoinColumn(name="id_Evenement")
+    @JoinColumn(name="idEvenement")
     private Evenement evenement;
 
     @ManyToOne
-    @JoinColumn(name="id_Utilisateur")
+    @JoinColumn(name="idUtilisateur")
     private Utilisateur utilisateur;
 
 

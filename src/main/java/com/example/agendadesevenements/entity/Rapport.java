@@ -6,11 +6,11 @@ import jdk.jshell.execution.Util;
 import java.util.Date;
 
 @Entity
-@Table(name="rapport")
+@Table(name="rapports")
 public class Rapport {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
+    private Integer Id;
 
     @Column(name="description")
     private String raison;
@@ -20,11 +20,11 @@ public class Rapport {
     private Date dateRapport;
 
     @ManyToOne
-    @JoinColumn(name = "id_Utilisateur")
+    @JoinColumn(name = "idUtilisateur")
     private Utilisateur utilisateur; //the use associated with this report
 
     @ManyToOne
-    @JoinColumn(name="id_Admin")
+    @JoinColumn(name="idAdmin")
     private Administrateur administrateur; //the admin managing the report
 
 

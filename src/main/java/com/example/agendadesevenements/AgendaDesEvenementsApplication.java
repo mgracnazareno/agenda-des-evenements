@@ -14,4 +14,11 @@ public class AgendaDesEvenementsApplication {
         SpringApplication.run(AgendaDesEvenementsApplication.class, args);
     }
 
+    @Bean
+    public CommandLineRunner commandLineRunner(){
+        return runner -> {
+            System.out.println("Hello User");
+        };
+    }
+
 }
