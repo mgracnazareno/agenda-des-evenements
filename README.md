@@ -36,7 +36,8 @@ Ce projet est une application transactionnelle développée avec HTML5, CSS3, Bo
 ## Contribution
 Les contributions à ce projet sont les bienvenues. Si vous souhaitez contribuer, veuillez suivre ces étapes :
 1. Forkez le projet.
-2. Créez votre branche de fonctionnalité (`git checkout -b feature/AmazingFeature`).
+2. Créez votre branche de fonctionnalité (`git checkout -b feature/
+`).
 3. Committez vos changements (`git commit -m 'Add some AmazingFeature'`).
 4. Push sur la branche (`git push origin feature/AmazingFeature`).
 5. Ouvrez une Pull Request.
