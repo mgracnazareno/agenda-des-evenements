@@ -8,7 +8,9 @@
 body {
     min-height: 100vh;;
 }
-
+nav {
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e)
+}
 .banner{
     background-image:  linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../images/pexels-teddy-yang-2263436.jpg");
     background-size: cover;

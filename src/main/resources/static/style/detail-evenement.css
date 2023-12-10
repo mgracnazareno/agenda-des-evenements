@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    max-height: 100vh;
+}
+
+nav {
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+.event-details {
+    padding: 3rem;
+    margin: 0 auto;
+}
+img {
+    height: 40%;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+}
