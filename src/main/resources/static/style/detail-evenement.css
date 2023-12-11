@@ -13,10 +13,30 @@ nav {
     background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
 }
 .event-details {
-    padding: 3rem;
+    padding: 1em;
     margin: 0 auto;
 }
+.event-details col {
+    display: flex;
+}
 img {
-    height: 40%;
-    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+    /*min-height: 30%;*/
+    /*min-width: 40vw;*/
+    /*object-fit:cover;cover*/
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+}
+
+footer{
+    display: block;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    color: white;
+
+    margin: 0;
+    padding: 0;
+}
+
+footer p {
+    text-align: center;
+    padding: 12px;
+    height: 25%;
 }

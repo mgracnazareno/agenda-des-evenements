@@ -14,15 +14,15 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-            <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+            <li class="nav-item"><a th:href="@{./login}" class="nav-link">Login</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Register</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Venus</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Categories</a></li>
         </ul>
     </div>
 </nav>
-<header class="banner">
-    <div class="container">
+<header class="banner ">
+    <div class="container vh-100">
         <div class="row justify-content-center">
             <div class="col-12 col-md-8 col-lg-6 text-center">
                 <h1>Self Event Management Script</h1>
@@ -32,47 +32,46 @@
         </div>
     </div>
 </header>
+<!-- DropDown Categorie-->
+<!--<section class="selection">-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-12 col-md-4">-->
+<!--                <select class="form-select  border-bottom border-bottom-md-0 rounded-0 border-0 form-focus-none bg-transparent" required>-->
+<!--                    &lt;!&ndash; options &ndash;&gt;-->
+<!--                    <option selected disabled value="">City</option>-->
+<!--                    <option value="jweb">Developpeur Web Junior</option>-->
+<!--                    <option value="sweb">Developpeur Web Sénior</option>-->
+<!--                    <option value="pmanager">Gestionnaire de projet</option>-->
 
-<section class="selection">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-4 col-sm-auto">
-                <select class="form-select  border-bottom border-bottom-md-0 rounded-0 border-0 form-focus-none bg-transparent" required>
-                    <!-- options -->
-                    <option selected disabled value="">City</option>
-                    <option value="jweb">Developpeur Web Junior</option>
-                    <option value="sweb">Developpeur Web Sénior</option>
-                    <option value="pmanager">Gestionnaire de projet</option>
-
-                </select>
-            </div>
-            <div class="col-12 col-md-4  col-sm-auto">
-                <select class="form-select  border-bottom border-bottom-md-0 rounded-0 border-0 form-focus-none bg-transparent" required>
-                    <!-- options -->
-                    <option selected disabled value="">Category</option>
-                    <option value="jweb">Developpeur Web Junior</option>
-                    <option value="sweb">Developpeur Web Sénior</option>
-                    <option value="pmanager">Gestionnaire de projet</option>
-                </select>
-            </div>
-            <div class="col-12 col-md-4 col-sm-auto">
-                <select class="form-select  border-bottom border-bottom-md-0 rounded-0 border-0 form-focus-none bg-transparent" required>
-                    <!-- options -->
-                    <option selected disabled value="">Price</option>
-                    <option value="jweb">Developpeur Web Junior</option>
-                    <option value="sweb">Developpeur Web Sénior</option>
-                    <option value="pmanager">Gestionnaire de projet</option>
-                </select>
-            </div>
-        </div>
-    </div>
-</section>
+<!--                </select>-->
+<!--            </div>-->
+<!--            <div class="col-12 col-md-4 ">-->
+<!--                <select class="form-select  border-bottom border-bottom-md-0 rounded-0 border-0 form-focus-none bg-transparent" required>-->
+<!--                    &lt;!&ndash; options &ndash;&gt;-->
+<!--                    <option selected disabled value="">Category</option>-->
+<!--                    <option value="jweb">Developpeur Web Junior</option>-->
+<!--                    <option value="sweb">Developpeur Web Sénior</option>-->
+<!--                    <option value="pmanager">Gestionnaire de projet</option>-->
+<!--                </select>-->
+<!--            </div>-->
+<!--            <div class="col-12 col-md-4">-->
+<!--                <select class="form-select  border-bottom border-bottom-md-0 rounded-0 border-0 form-focus-none bg-transparent" required>-->
+<!--                    &lt;!&ndash; options &ndash;&gt;-->
+<!--                    <option selected disabled value="">Price</option>-->
+<!--                    <option value="jweb">Developpeur Web Junior</option>-->
+<!--                    <option value="sweb">Developpeur Web Sénior</option>-->
+<!--                    <option value="pmanager">Gestionnaire de projet</option>-->
+<!--                </select>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section> &lt;!&ndash; End DropDown Categorie&ndash;&gt;-->
 
 <!--Events Cards-->
-<div class="container-fluid">
+<div class="event-background min-vh-100">
     <h3>Top Selling Events</h3>
-    <div class="event-cards-container">
-
+    <div class="event-cards-container ">
         <div class="event-card">
             <div class="event-card-img">
                 <img class="event-image" th:src="@{/images/lee-blanchflower-1dW1vEJLlCQ-unsplash.jpg}" alt="Event Image">
@@ -88,7 +87,7 @@
                     <p class="event-details">Start Time: Event Start Time</p>
                     <p class="event-details">End Time: Event End Time</p>
                 </div>
-                <button  class="register-button">Register</button>
+                <a  th:href="@{./event}" class="register-button">Learn More</a>
             </div>
 
 

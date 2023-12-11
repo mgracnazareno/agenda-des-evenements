@@ -25,6 +25,14 @@ public class UtilisateurController {
 
         return "events";
     }
+    @GetMapping("/login")
+    public String pageLogin(){
+        return "login";
+    }
+    @GetMapping("/event")
+    public String pageDetailsEvenement(){
+        return "detail-evenement";
+    }
 
 
 }
