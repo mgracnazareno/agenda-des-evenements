@@ -17,13 +17,13 @@ public class UtilisateurController {
     }
 
 
-    @GetMapping("/listEventt")
+    @GetMapping("/list-event")
     public String listEvents(Model model){
         //get all the events from db
 
         //add list of events to the model
 
-        return "events";
+        return "list-evenement";
     }
     @GetMapping("/login")
     public String pageLogin(){
@@ -34,5 +34,9 @@ public class UtilisateurController {
         return "detail-evenement";
     }
 
+    @GetMapping("/profil")
+    public String pageProfil(){
+        return "profil";
+    }
 
 }
