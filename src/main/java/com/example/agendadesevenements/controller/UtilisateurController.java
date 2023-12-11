@@ -34,5 +34,10 @@ public class UtilisateurController {
         return "detail-evenement";
     }
 
+    @GetMapping("/profil")
+    public String pageProfil(){
+        return "profil";
+    }
+
 
 }
