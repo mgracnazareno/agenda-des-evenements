@@ -41,42 +41,45 @@
 <!--    </div>-->
 <!--</section>-->
 
-    <section id="event-details d-flex flex-column">
+    <section id="event-details d-flex flex-column vh-100">
        <div class="container">
-            <div class="row ">
-                <div class="col d-flex flex-column h-25 pt-3 mt-4 justify-content-center align-content-center">
-                    <h2 class="text-center">Events Information</h2>
-                    <div class="event-img text-center">
-                        <img th:src="@{https://source.unsplash.com/random/550x600}" alt="">
-                    </div>
-                    <div class="event-details-body ">
-                        <h2>Title</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Porro, minus! Impedit nesciunt itaque voluptate nobis fugit omnis
-                            laborum dicta quo cum debitis rem voluptatibus asperiores, unde illo ipsa
-                            quod error ratione aliquid excepturi reiciendis cumque repellat? Aliquam provident
-                            corporis ducimus?
-                        </p>
-                        <p>Date: </p>
-                        <p>Time</p>
-                        <p>End Time</p>
-                        <p>Number of Attendants</p>
-                        <p>Location</p>
-                        <!-- if not register ask user to signup or if already sign up , then login -->
-                        <!-- validate user's credential-->
-                        <!-- redirect user if login is successful-->
-                        <a th:href="@{./profil}">Register</a>
+            <div class="row">
+                <div class="col d-flex flex-column pt-3 justify-content-center align-content-center">
+                    <h2 class="text-center m-1">Events Information</h2>
+                    <div class="events">
+
+                        <div class="event-details-body ">
+                            <h5>Title</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Porro, minus! Impedit nesciunt itaque voluptate nobis fugit omnis
+                                laborum dicta quo cum debitis rem voluptatibus asperiores, unde illo ipsa
+                                quod error ratione aliquid excepturi reiciendis cumque repellat? Aliquam provident
+                                corporis ducimus?
+                            </p>
+                            <p><span>Date:</span> </p>
+                            <p><span>Time</span></p>
+                            <p><span>End Time</span></p>
+                            <p><span>Number of Attendants</span></p>
+                            <p><span>Location</span></p>
+                            <!-- if not register ask user to signup or if already sign up , then login -->
+                            <!-- validate user's credential-->
+                            <!-- redirect user if login is successful-->
+                            <a th:href="@{./profil}">Register</a>
+                        </div>
+                        <div class="events-img min-vh-100 vh-100 align-content-center p3">
+                            <img th:src="@{https://source.unsplash.com/random/350x300}" alt="">
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-
 <!-- footer -->
-<footer>
-    <p>© Event Management 2023</p>
+<footer class="footer mt-auto py-3bg-dark" >
+    <div class="container">
+        <span class="text-light">© Event Management 2023</span>
+    </div>
 </footer>
 </body>
 </html>

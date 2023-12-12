@@ -10,7 +10,7 @@ public class Ami {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idAmi; // This should correspond to 'idAmi' AUTO_INCREMENT PRIMARY KEY in your DB
 
-    @Column(name = "status")
+    @Column(name = "status", length = 50)
     private String status;
 
     @ManyToOne

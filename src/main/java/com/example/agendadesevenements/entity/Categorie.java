@@ -8,9 +8,9 @@ public class Categorie {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idCategorie;
+    private Long idCategorie;
 
-    @Column(name="nomCategorie")
+    @Column(name="nomCategorie", length=255)
     private String nomCategorie;
 
 }

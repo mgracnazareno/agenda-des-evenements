@@ -6,7 +6,6 @@ import lombok.Data;
 import java.util.List;
 
 @Entity
-@Data
 @Table(name = "administrateur")
 public class Administrateur {
     @Id
