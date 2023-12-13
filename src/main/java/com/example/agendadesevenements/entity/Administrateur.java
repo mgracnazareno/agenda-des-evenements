@@ -1,7 +1,9 @@
 package com.example.agendadesevenements.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
@@ -22,4 +24,7 @@ public class Administrateur {
 
     @OneToMany(mappedBy = "administrateur", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Rapport> rapports;
+
+    
+
 }
