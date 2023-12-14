@@ -1,0 +1,39 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+nav {
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: end;
+}
+.navbar-item-btn{
+
+}
+
+.avatar {
+    width:40px;
+    border-radius:50%;
+}
+.banner-img{
+    width: 500px;
+    object-fit: cover;
+}
+
+.sidebar-item{
+    margin: 0 auto;
+    background: #c3cdff;
+    box-shadow: 10px 10px 5px 0px rgba(195,205,255,0.75);
+    border-radius: 16px;
+    /*background: rgb(238,174,202);*/
+    /*background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);*/
+}
+.event-quote {
+    background: #0f0c29;
+    color: white;
+}

@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
@@ -48,13 +47,14 @@ public class UtilisateurController {
 
         return "list-evenement";
     }
+
     @GetMapping("/login")
     public String pageLogin(){
         return "login";
     }
     @GetMapping("/event")
     public String pageDetailsEvenement(){
-        return "detail-evenement";
+        return "event-detail";
     }
 
     @GetMapping("/profil")
@@ -66,5 +66,8 @@ public class UtilisateurController {
     public String pageEntrepreneur(){
         return "entrepreneur";
     }
+
+    @GetMapping("/event-schedule")
+    public String pageeEventSchedule(){return "event-schedule";}
 
 }

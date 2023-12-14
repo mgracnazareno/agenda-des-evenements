@@ -25,6 +25,49 @@ public class Administrateur {
     @OneToMany(mappedBy = "administrateur", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Rapport> rapports;
 
-    
+    public Administrateur() {
+    }
 
+    public Administrateur(Utilisateur utilisateur, Evenement evenement) {
+        this.utilisateur = utilisateur;
+        this.evenement = evenement;
+    }
+
+    public Administrateur(Integer idAdmin, Utilisateur utilisateur, Evenement evenement) {
+        this.idAdmin = idAdmin;
+        this.utilisateur = utilisateur;
+        this.evenement = evenement;
+    }
+
+    public Integer getIdAdmin() {
+        return idAdmin;
+    }
+
+    public void setIdAdmin(Integer idAdmin) {
+        this.idAdmin = idAdmin;
+    }
+
+    public Utilisateur getUtilisateur() {
+        return utilisateur;
+    }
+
+    public void setUtilisateur(Utilisateur utilisateur) {
+        this.utilisateur = utilisateur;
+    }
+
+    public Evenement getEvenement() {
+        return evenement;
+    }
+
+    public void setEvenement(Evenement evenement) {
+        this.evenement = evenement;
+    }
+
+    public List<Rapport> getRapports() {
+        return rapports;
+    }
+
+    public void setRapports(List<Rapport> rapports) {
+        this.rapports = rapports;
+    }
 }
