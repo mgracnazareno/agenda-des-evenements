@@ -56,18 +56,12 @@ public class UtilisateurController {
     public String pageDetailsEvenement(){
         return "event-detail";
     }
-
     @GetMapping("/profil")
     public String pageProfil(){
         return "profil";
     }
 
-    @GetMapping("/entrepreneur")
-    public String pageEntrepreneur(){
-        return "entrepreneur";
-    }
-
     @GetMapping("/event-schedule")
-    public String pageeEventSchedule(){return "event-schedule";}
+    public String pageEventSchedule(){return "event-schedule";}
 
 }
